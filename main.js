@@ -52,6 +52,8 @@ function pluginHandler() {
     let elementsToChange = "";
     let numberCheckedBoxes = 0;
     const roundValuesCheck = document.getElementById("roundValuesCheck").checked;
+    const priceToPromo = document.getElementById("priceToPromo");
+
 
     // check if input with price is empty
     if ( isNaN(changeValues) || changeValues < 0 || changeValues > 2500 ) {
@@ -78,11 +80,10 @@ function pluginHandler() {
         for (let option of options) {
           // check if all price columns
           if (br > 2 && br < 18) {
-             allPricesPromosChecked = true;
+            allPricesPromosChecked = true;
             let dataChange = option.getAttribute("data-change");
             let feed = { value: option.value, dataChange: dataChange };
-            choiceColumnValsJson.push(feed);
-            
+            choiceColumnValsJson.push(feed);            
           }
           br++;
         }
@@ -119,27 +120,39 @@ function pluginHandler() {
     for (let choiceColumnVal of choiceColumnVals) {
       //   check the row in JSON array
       let choiceColChange = choiceColumnValsJson[number].dataChange;
-      number++;
+      
 
       // loop all <td> and check if need to change the value of them /if row  are checked(selected) /
       for (let changingElement of changingElements) {
         let changingElementRow = changingElement.closest("tr");
-        let checkBoxChecked = changingElementRow.querySelector(".chkbox")
-          .checked;
+        let checkBoxChecked = changingElementRow.querySelector(".chkbox").checked;
 
         // check if the row should be changed
         if (checkBoxChecked) {
           numberCheckedBoxes++;
+          
 
           //   select the columns which should be checked
           elementsToChange = changingElementRow.querySelectorAll(
             "[data-change='" + choiceColChange + "']"
           );
-
+         
+         
+            const dataCol = parseFloat(choiceColumnVal) + 1;
+            const priceInputs = document.querySelectorAll(`[data-col='price${dataCol}']`);
+            
           let currentElement = elementsToChange[choiceColumnVal];
+          let currentElementVal = 0;
           // check if the <td> has been already changed with the previous loops
           if (!currentElement.hasAttribute("changed")) {
-            let currentElementVal = parseFloat(currentElement.value);
+              if(priceToPromo.checked) {
+                  if(priceInputs) {
+                     currentElementVal = parseFloat(priceInputs[number].value);
+                  }
+              }else {
+                currentElementVal = parseFloat(currentElement.value);
+              }
+            
             let changeVal = parseFloat(changeValues);
             // calculations
             switch (calculationVal) {
@@ -181,7 +194,6 @@ function pluginHandler() {
             
             // check if the variable round is checked 
             if(roundValuesCheck) {
-                console.log("round");
                 changedValues = Math.round(changedValues);
             } 
             currentElement.setAttribute("changed", "true");
@@ -191,9 +203,11 @@ function pluginHandler() {
 
             // currentElement.value = changedValues.toFixed(2);
             currentElement.setAttribute("value", changedValues.toFixed(2));
+            number++;
           }
         }
       }
+     
     }
 
     if (numberCheckedBoxes === 0) {
@@ -325,8 +339,6 @@ function scrollInfo(e) {
           }, 2000);
     }
 }
-
-
 
 window.addEventListener('DOMContentLoaded', (event) => {
       pluginHandler();
