@@ -815,6 +815,7 @@ function my_shipping_tab_callback()
 {
   global $product;
   global $wpdb;
+  global $plugin_type_name;
   $product_id = $product->id;
   $result = $wpdb->get_results("SELECT * FROM frame_prices WHERE product_id = '" . $product_id . "'");
 
@@ -826,7 +827,7 @@ function my_shipping_tab_callback()
   if (count($result) > 0) {
     echo '<div class="container-kasi"><table class="kasi-table"><tbody>
                     <tr>
-                        <th>Каса</th>
+                        <th>'.$plugin_type_name.'</th>
                         <th>Описание</th>
                         <th>Цена</th>
                     </tr>';
