@@ -425,22 +425,22 @@ echo " <div class='messages-container $class'>Успешно направена 
                 <td><textarea name="product[' . $a->ID . '][price14_desc]">' . get_frame_price($a->ID)->price14_desc . '</textarea></td>
                 <td><textarea name="product[' . $a->ID . '][price15_desc]">' . get_frame_price($a->ID)->price15_desc . '</textarea></td>
                 
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic0]" class="frame_number" value="' . get_frame_price($a->ID)->pic0 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic1]" class="frame_number" value="' . get_frame_price($a->ID)->pic1 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic2]" class="frame_number" value="' . get_frame_price($a->ID)->pic2 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic3]" class="frame_number" value="' . get_frame_price($a->ID)->pic3 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic4]" class="frame_number" value="' . get_frame_price($a->ID)->pic4 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic5]" class="frame_number" value="' . get_frame_price($a->ID)->pic5 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic6]" class="frame_number" value="' . get_frame_price($a->ID)->pic6 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic7]" class="frame_number" value="' . get_frame_price($a->ID)->pic7 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic8]" class="frame_number" value="' . get_frame_price($a->ID)->pic8 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic9]" class="frame_number" value="' . get_frame_price($a->ID)->pic9 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic10]" class="frame_number" value="' . get_frame_price($a->ID)->pic10 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic11]" class="frame_number" value="' . get_frame_price($a->ID)->pic11 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic12]" class="frame_number" value="' . get_frame_price($a->ID)->pic12 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic13]" class="frame_number" value="' . get_frame_price($a->ID)->pic13 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic14]" class="frame_number" value="' . get_frame_price($a->ID)->pic14 . '"></td>
-                <td><input type="number" step="0.01" min="0"  name="product[' . $a->ID . '][pic15]" class="frame_number" value="' . get_frame_price($a->ID)->pic15 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic0]" class="frame_number" value="' . get_frame_price($a->ID)->pic0 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic1]" class="frame_number" value="' . get_frame_price($a->ID)->pic1 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic2]" class="frame_number" value="' . get_frame_price($a->ID)->pic2 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic3]" class="frame_number" value="' . get_frame_price($a->ID)->pic3 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic4]" class="frame_number" value="' . get_frame_price($a->ID)->pic4 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic5]" class="frame_number" value="' . get_frame_price($a->ID)->pic5 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic6]" class="frame_number" value="' . get_frame_price($a->ID)->pic6 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic7]" class="frame_number" value="' . get_frame_price($a->ID)->pic7 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic8]" class="frame_number" value="' . get_frame_price($a->ID)->pic8 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic9]" class="frame_number" value="' . get_frame_price($a->ID)->pic9 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic10]" class="frame_number" value="' . get_frame_price($a->ID)->pic10 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic11]" class="frame_number" value="' . get_frame_price($a->ID)->pic11 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic12]" class="frame_number" value="' . get_frame_price($a->ID)->pic12 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic13]" class="frame_number" value="' . get_frame_price($a->ID)->pic13 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic14]" class="frame_number" value="' . get_frame_price($a->ID)->pic14 . '"></td>
+                <td><input type="text" name="product[' . $a->ID . '][pic15]" class="frame_number" value="' . get_frame_price($a->ID)->pic15 . '"></td>
                  <td><textarea name="product[' . $a->ID . '][description]">' . get_frame_price($a->ID)->description . '</textarea></td>
             </tr>';
           }
