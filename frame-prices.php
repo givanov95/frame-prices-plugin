@@ -4,7 +4,7 @@
  * Plugin Name: Цени на каси
  * Plugin URI: 
  * Description: 
- * Version: 0.3.95
+ * Version: 0.3.96
  * Author: Martin Mladenov, Georgi Ivanov
  * Author URI: http://yourwebsiteurl.com/
  **/
