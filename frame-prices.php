@@ -910,6 +910,11 @@ function my_shipping_tab_callback()
                         <td data-th="Описание">' . $row->price14_desc . '</td>
                         <td data-th="Цена" class="price-css">' . ($row->promo14 > 0 ? prc($row->promo14) . ' <del>' . prc($row->price14) . '</del>' : prc($row->price14)) . '</td>
                     </tr>' : '') . '
+                    ' . ($row->price15 > 0 ? '<tr>
+                    <td data-th="Каса"><img src="/ceni/' . $row->pic15 . '"></td>
+                        <td data-th="Описание">' . $row->price15_desc . '</td>
+                        <td data-th="Цена" class="price-css">' . ($row->promo15 > 0 ? prc($row->promo15) . ' <del>' . prc($row->price15) . '</del>' : prc($row->price15)) . '</td>
+                    </tr>' : '') . '
                 ';
     }
     echo '</table>';
