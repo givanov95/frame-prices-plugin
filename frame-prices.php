@@ -468,8 +468,9 @@ function woo_doors_bg_settings_page()
       }
 
 
-      foreach ($_POST['product'] as $key => $el) {
+      $product = wp_unslash($_POST['product']);
 
+      foreach ($product as $key => $el) {
         // query
 
         $q = mysqli_prepare($conn, "SELECT product_id FROM frame_prices WHERE product_id = ?");
