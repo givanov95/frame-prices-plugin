@@ -271,8 +271,8 @@ function pluginHandler() {
 
     
     for (let i = 1; i < rows.length; i++) {
-      if (rows[i].querySelector(".change-price") != null) {
-        allVals.push(rows[i].querySelector(".change-price").value);
+      if (rows[i].querySelector(".frame_number") != null) {
+        allVals.push(rows[i].querySelector(".frame_number").value);
       }
     }
 
@@ -280,7 +280,7 @@ function pluginHandler() {
     for (let value of sortedVals) {
       for (let key in rows) {
         if (key > 0) {
-        let firstCol = rows[key].querySelector(".change-price");
+        let firstCol = rows[key].querySelector(".frame_number");
           if (firstCol != null) {
              let valueFirstCol = firstCol.value;
             if (value === valueFirstCol) {
