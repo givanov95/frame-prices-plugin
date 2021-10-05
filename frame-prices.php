@@ -4,17 +4,11 @@
  * Plugin Name: Цени на каси
  * Plugin URI: 
  * Description: 
- * Version: 0.3.97
+ * Version: 0.4.0
  * Author: Martin Mladenov, Georgi Ivanov
  * Author URI: http://yourwebsiteurl.com/
  **/
 
-
-wp_register_script('main_js', plugins_url('main.js', __FILE__));
-wp_enqueue_script('main_js');
-
-wp_register_style('style.css', plugins_url('style.css', __FILE__));
-wp_enqueue_style('style.css');
 
 // create custom plugin settings menu
 add_action('admin_menu', 'woo_doors_bg_create_menu');
@@ -34,6 +28,13 @@ function woo_doors_bg_create_menu()
 
 function woo_doors_bg_settings_page()
 {
+    
+    wp_register_script('main_js', plugins_url('main.js', __FILE__));
+    wp_enqueue_script('main_js');
+    
+    wp_register_style('style.css', plugins_url('style.css', __FILE__));
+    wp_enqueue_style('style.css');
+
 
   function get_frame_price($product_id)
   {
@@ -803,6 +804,13 @@ function my_shipping_tab($tabs)
   $product_id = $product->id;
   $result = $wpdb->get_results("SELECT * FROM frame_prices WHERE product_id = '" . $product_id . "'");
   if (count($result) > 0) {
+      
+    wp_register_script('main_js', plugins_url('main.js', __FILE__));
+    wp_enqueue_script('main_js');
+    
+    wp_register_style('style.css', plugins_url('style.css', __FILE__));
+    wp_enqueue_style('style.css');
+
     $tabs['shipping'] = array(
       'title'     => __('Цени според касата', 'child-theme'),
       'priority'  => 31,
