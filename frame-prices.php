@@ -4,7 +4,7 @@
  * Plugin Name: Цени на каси
  * Plugin URI: 
  * Description: 
- * Version: 0.4.0
+ * Version: 0.4.1
  * Author: Martin Mladenov, Georgi Ivanov
  * Author URI: http://yourwebsiteurl.com/
  **/
@@ -289,123 +289,123 @@ function woo_doors_bg_settings_page()
 	            <td>' . $a->post_title . '</td>
 	            
 	            <td>
-	                <input disabled type="number" title="' . get_frame_price($a->ID)->price0_desc . '"  step="0.01" min="0"  class="frame_number" value="' . $product->get_regular_price() . '">    
+	                <input disabled type="number" title="' . get_frame_price($a->ID)->price0_desc . '"  step="1" min="0"  class="frame_number" value="' . $product->get_regular_price() . '">    
 	           </td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price1 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price1_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price1]" class="frame_number change-price" data-change="price" data-col="1" value="' . (get_frame_price($a->ID)->price1 == "" ? "0" : get_frame_price($a->ID)->price1) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price1_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price1]" class="frame_number change-price" data-change="price" data-col="1" value="' . (get_frame_price($a->ID)->price1 == "" ? "0" : get_frame_price($a->ID)->price1) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price2 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price2_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price2]" class="frame_number change-price price" data-change="price" data-col="2" value="' . (get_frame_price($a->ID)->price2 == "" ? "0" : get_frame_price($a->ID)->price2) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price2_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price2]" class="frame_number change-price price" data-change="price" data-col="2" value="' . (get_frame_price($a->ID)->price2 == "" ? "0" : get_frame_price($a->ID)->price2) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price3 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price3_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price3]" class="frame_number change-price" data-change="price" data-col="3" value="' . (get_frame_price($a->ID)->price3 == "" ? "0" : get_frame_price($a->ID)->price3) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price3_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price3]" class="frame_number change-price" data-change="price" data-col="3" value="' . (get_frame_price($a->ID)->price3 == "" ? "0" : get_frame_price($a->ID)->price3) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price4 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price4_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price4]" class="frame_number change-price" data-change="price" data-col="4" value="' . (get_frame_price($a->ID)->price4 == "" ? "0" : get_frame_price($a->ID)->price4) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price4_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price4]" class="frame_number change-price" data-change="price" data-col="4" value="' . (get_frame_price($a->ID)->price4 == "" ? "0" : get_frame_price($a->ID)->price4) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price5 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price5_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price5]" class="frame_number change-price" data-change="price" data-col="5" value="' . (get_frame_price($a->ID)->price5 == "" ? "0" : get_frame_price($a->ID)->price5) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price5_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price5]" class="frame_number change-price" data-change="price" data-col="5" value="' . (get_frame_price($a->ID)->price5 == "" ? "0" : get_frame_price($a->ID)->price5) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price6 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price6_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price6]" class="frame_number change-price" data-change="price" data-col="6" value="' . (get_frame_price($a->ID)->price6 == "" ? "0" : get_frame_price($a->ID)->price6) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price6_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price6]" class="frame_number change-price" data-change="price" data-col="6" value="' . (get_frame_price($a->ID)->price6 == "" ? "0" : get_frame_price($a->ID)->price6) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price7 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price7_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price7]" class="frame_number change-price" data-change="price" data-col="7" value="' . (get_frame_price($a->ID)->price7 == "" ? "0" : get_frame_price($a->ID)->price7) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price7_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price7]" class="frame_number change-price" data-change="price" data-col="7" value="' . (get_frame_price($a->ID)->price7 == "" ? "0" : get_frame_price($a->ID)->price7) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price8 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price8_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price8]" class="frame_number change-price" data-change="price" data-col="8" value="' . (get_frame_price($a->ID)->price8 == "" ? "0" : get_frame_price($a->ID)->price8) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price8_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price8]" class="frame_number change-price" data-change="price" data-col="8" value="' . (get_frame_price($a->ID)->price8 == "" ? "0" : get_frame_price($a->ID)->price8) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price9 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price9_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price9]" class="frame_number change-price" data-change="price" data-col="9" value="' . (get_frame_price($a->ID)->price9 == "" ? "0" : get_frame_price($a->ID)->price9) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price9_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price9]" class="frame_number change-price" data-change="price" data-col="9" value="' . (get_frame_price($a->ID)->price9 == "" ? "0" : get_frame_price($a->ID)->price9) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->price10 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price10_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price10]" class="frame_number change-price" data-change="price" data-col="10" value="' . (get_frame_price($a->ID)->price10 == "" ? "0" : get_frame_price($a->ID)->price10) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price10_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price10]" class="frame_number change-price" data-change="price" data-col="10" value="' . (get_frame_price($a->ID)->price10 == "" ? "0" : get_frame_price($a->ID)->price10) . '"></td>
                 
                 <td>
                 
                     <span class="hidden">' . get_frame_price($a->ID)->price11 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price11_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price11]" class="frame_number change-price" data-change="price" data-col="11" value="' . (get_frame_price($a->ID)->price11 == "" ? "0" : get_frame_price($a->ID)->price11) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price11_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price11]" class="frame_number change-price" data-change="price" data-col="11" value="' . (get_frame_price($a->ID)->price11 == "" ? "0" : get_frame_price($a->ID)->price11) . '">
                 </td>
                 
                 <td>
                     <span class="hidden">' . get_frame_price($a->ID)->price12 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price12_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price12]" class="frame_number change-price" data-change="price" data-col="12" value="' . (get_frame_price($a->ID)->price12 == "" ? "0" : get_frame_price($a->ID)->price12) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price12_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price12]" class="frame_number change-price" data-change="price" data-col="12" value="' . (get_frame_price($a->ID)->price12 == "" ? "0" : get_frame_price($a->ID)->price12) . '">
                 </td>
                 
                 <td>
                     <span class="hidden">' . get_frame_price($a->ID)->price13 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price13_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price13]" class="frame_number change-price" data-change="price" data-col="13" value="' . (get_frame_price($a->ID)->price13 == "" ? "0" : get_frame_price($a->ID)->price13) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price13_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price13]" class="frame_number change-price" data-change="price" data-col="13" value="' . (get_frame_price($a->ID)->price13 == "" ? "0" : get_frame_price($a->ID)->price13) . '">
                 </td>
                 
                 <td>
                     <span class="hidden">' . get_frame_price($a->ID)->price14 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price14_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price14]" class="frame_number change-price" data-change="price" data-col="14" value="' . (get_frame_price($a->ID)->price14 == "" ? "0" : get_frame_price($a->ID)->price14) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price14_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price14]" class="frame_number change-price" data-change="price" data-col="14" value="' . (get_frame_price($a->ID)->price14 == "" ? "0" : get_frame_price($a->ID)->price14) . '">
                 </td>
                 
                 <td>
                     <span class="hidden">' . get_frame_price($a->ID)->price15 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price15_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][price15]" class="frame_number change-price" data-change="price" data-col="15" value="' . (get_frame_price($a->ID)->price15 == "" ? "0" : get_frame_price($a->ID)->price15) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price15_desc . '" step="1" min="0"  name="product[' . $a->ID . '][price15]" class="frame_number change-price" data-change="price" data-col="15" value="' . (get_frame_price($a->ID)->price15 == "" ? "0" : get_frame_price($a->ID)->price15) . '">
                 </td>
                 
                  <td>
-	                <input disabled  title="' . get_frame_price($a->ID)->price0_desc . '" type="number" step="0.01" min="0"  class="frame_number" value="' . $product->get_sale_price() . '">    
+	                <input disabled  title="' . get_frame_price($a->ID)->price0_desc . '" type="number" step="1" min="0"  class="frame_number" value="' . $product->get_sale_price() . '">    
 	           </td>
                 
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo1 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price1_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo1]" class="frame_number change-price" data-change="promo" data-col="1" value="' . (get_frame_price($a->ID)->promo1 == "" ? "0" : get_frame_price($a->ID)->promo1) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price1_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo1]" class="frame_number change-price" data-change="promo" data-col="1" value="' . (get_frame_price($a->ID)->promo1 == "" ? "0" : get_frame_price($a->ID)->promo1) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo2 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price2_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo2]" class="frame_number change-price" data-change="promo" data-col="2" value="' . (get_frame_price($a->ID)->promo2 == "" ? "0" : get_frame_price($a->ID)->promo2) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price2_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo2]" class="frame_number change-price" data-change="promo" data-col="2" value="' . (get_frame_price($a->ID)->promo2 == "" ? "0" : get_frame_price($a->ID)->promo2) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo3 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price3_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo3]" class="frame_number change-price" data-change="promo" data-col="3" value="' . (get_frame_price($a->ID)->promo3 == "" ? "0" : get_frame_price($a->ID)->promo3) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price3_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo3]" class="frame_number change-price" data-change="promo" data-col="3" value="' . (get_frame_price($a->ID)->promo3 == "" ? "0" : get_frame_price($a->ID)->promo3) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo4 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price4_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo4]" class="frame_number change-price" data-change="promo" data-col="4" value="' . (get_frame_price($a->ID)->promo4 == "" ? "0" : get_frame_price($a->ID)->promo4) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price4_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo4]" class="frame_number change-price" data-change="promo" data-col="4" value="' . (get_frame_price($a->ID)->promo4 == "" ? "0" : get_frame_price($a->ID)->promo4) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo5 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price5_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo5]" class="frame_number change-price" data-change="promo" data-col="5" value="' . (get_frame_price($a->ID)->promo5 == "" ? "0" : get_frame_price($a->ID)->promo5) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price5_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo5]" class="frame_number change-price" data-change="promo" data-col="5" value="' . (get_frame_price($a->ID)->promo5 == "" ? "0" : get_frame_price($a->ID)->promo5) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo6 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price6_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo6]" class="frame_number change-price" data-change="promo" data-col="6" value="' . (get_frame_price($a->ID)->promo6 == "" ? "0" : get_frame_price($a->ID)->promo6) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price6_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo6]" class="frame_number change-price" data-change="promo" data-col="6" value="' . (get_frame_price($a->ID)->promo6 == "" ? "0" : get_frame_price($a->ID)->promo6) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo7 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price7_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo7]" class="frame_number change-price" data-change="promo" data-col="7" value="' . (get_frame_price($a->ID)->promo7 == "" ? "0" : get_frame_price($a->ID)->promo7) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price7_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo7]" class="frame_number change-price" data-change="promo" data-col="7" value="' . (get_frame_price($a->ID)->promo7 == "" ? "0" : get_frame_price($a->ID)->promo7) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo8 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price8_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo8]" class="frame_number change-price" data-change="promo" data-col="8" value="' . (get_frame_price($a->ID)->promo8 == "" ? "0" : get_frame_price($a->ID)->promo8) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price8_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo8]" class="frame_number change-price" data-change="promo" data-col="8" value="' . (get_frame_price($a->ID)->promo8 == "" ? "0" : get_frame_price($a->ID)->promo8) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo9 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price9_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo9]" class="frame_number change-price" data-change="promo" data-col="9" value="' . (get_frame_price($a->ID)->promo9 == "" ? "0" : get_frame_price($a->ID)->promo9) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price9_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo9]" class="frame_number change-price" data-change="promo" data-col="9" value="' . (get_frame_price($a->ID)->promo9 == "" ? "0" : get_frame_price($a->ID)->promo9) . '"></td>
                 <td>
                 <span class="hidden">' . get_frame_price($a->ID)->promo10 . '</span>
-                <input type="number" title="' . get_frame_price($a->ID)->price10_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo10]" class="frame_number change-price" data-change="promo" data-col="10" value="' . (get_frame_price($a->ID)->promo10 == "" ? "0" : get_frame_price($a->ID)->promo10) . '"></td>
+                <input type="number" title="' . get_frame_price($a->ID)->price10_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo10]" class="frame_number change-price" data-change="promo" data-col="10" value="' . (get_frame_price($a->ID)->promo10 == "" ? "0" : get_frame_price($a->ID)->promo10) . '"></td>
                 
                 <td>
                     <span class="hidden">' . get_frame_price($a->ID)->promo11 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price11_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo11]" class="frame_number change-price" data-change="promo" data-col="11" value="' . (get_frame_price($a->ID)->promo11 == "" ? "0" : get_frame_price($a->ID)->promo11) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price11_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo11]" class="frame_number change-price" data-change="promo" data-col="11" value="' . (get_frame_price($a->ID)->promo11 == "" ? "0" : get_frame_price($a->ID)->promo11) . '">
                 </td>
                 
                  <td>
                     <span class="hidden">' . get_frame_price($a->ID)->promo12 . '</span> 
-                    <input type="number" title="' . get_frame_price($a->ID)->price12_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo12]" class="frame_number change-price" data-change="promo" data-col="12" value="' . (get_frame_price($a->ID)->promo12 == "" ? "0" : get_frame_price($a->ID)->promo12) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price12_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo12]" class="frame_number change-price" data-change="promo" data-col="12" value="' . (get_frame_price($a->ID)->promo12 == "" ? "0" : get_frame_price($a->ID)->promo12) . '">
                 </td>
                 
                  <td>
                     <span class="hidden">' . get_frame_price($a->ID)->promo13 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price13_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo13]" class="frame_number change-price" data-change="promo" data-col="13" value="' . (get_frame_price($a->ID)->promo13 == "" ? "0" : get_frame_price($a->ID)->promo13) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price13_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo13]" class="frame_number change-price" data-change="promo" data-col="13" value="' . (get_frame_price($a->ID)->promo13 == "" ? "0" : get_frame_price($a->ID)->promo13) . '">
                 </td>
                 
                  <td>
                     <span class="hidden">' . get_frame_price($a->ID)->promo14 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price14_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo14]" class="frame_number change-price" data-change="promo" data-col="14" value="' . (get_frame_price($a->ID)->promo14 == "" ? "0" : get_frame_price($a->ID)->promo14) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price14_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo14]" class="frame_number change-price" data-change="promo" data-col="14" value="' . (get_frame_price($a->ID)->promo14 == "" ? "0" : get_frame_price($a->ID)->promo14) . '">
                 </td>
                 
                  <td>
                     <span class="hidden">' . get_frame_price($a->ID)->promo15 . '</span>
-                    <input type="number" title="' . get_frame_price($a->ID)->price15_desc . '" step="0.01" min="0"  name="product[' . $a->ID . '][promo15]" class="frame_number change-price" data-change="promo" data-col="15" value="' . (get_frame_price($a->ID)->promo15 == "" ? "0" : get_frame_price($a->ID)->promo15) . '">
+                    <input type="number" title="' . get_frame_price($a->ID)->price15_desc . '" step="1" min="0"  name="product[' . $a->ID . '][promo15]" class="frame_number change-price" data-change="promo" data-col="15" value="' . (get_frame_price($a->ID)->promo15 == "" ? "0" : get_frame_price($a->ID)->promo15) . '">
                 </td>
                 
                 
@@ -467,6 +467,8 @@ function woo_doors_bg_settings_page()
       if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
       }
+      
+      $conn->set_charset("utf8mb4");
 
 
       $product = wp_unslash($_POST['product']);
