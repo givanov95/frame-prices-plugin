@@ -340,6 +340,7 @@ function pluginHandler() {
   
 	  const checkboxes = document.querySelectorAll('.chkbox');
 	  let lastChecked = null;
+	  let start,end;
   
 	  for (const chk of checkboxes) {
 		  chk.addEventListener("click", (e) => {
@@ -354,9 +355,14 @@ function pluginHandler() {
 			  }
   
 			  if (e.shiftKey) {
-  
-				  let start = lastChecked;
-				  let end = currIndexEl;
+
+				  if(currIndexEl > lastChecked ) {
+					start = lastChecked;
+					end = currIndexEl;
+				}else {
+					start = currIndexEl;
+					end = lastChecked + 1 ;
+				}
   
 				  for (let i = start; i < end; i++) {
 					  checkboxes[i].checked = isChecked;
